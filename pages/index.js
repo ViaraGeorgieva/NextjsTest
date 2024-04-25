@@ -7,7 +7,11 @@ const heroProps = {
   description: "Start the process here",
   ctaText: "Start",
 };
-const agencySelectionProps = {};
+const agencySelectionProps = {
+  image: {src: "/img/video.png", alt:"Image repsenting video" ,width: 500, height: 500 },
+  title: "Managed agency seleciton",
+  description:"Strengthen your onboarding process"
+};
 
 export default function Home() {
   return (
@@ -22,7 +26,8 @@ export default function Home() {
       </head>
       <div>
         {/** Hero Section*/}
-        <Hero {...heroProps} />
+        {/* <Hero {...heroProps} /> */}
+        
         {/** Agency Section*/}
         <AgencySeleciton {...agencySelectionProps} />
       </div>
