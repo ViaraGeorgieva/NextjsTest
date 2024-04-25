@@ -1,4 +1,5 @@
-import { Hero } from "../sections";
+/* eslint-disable @next/next/no-page-custom-font */
+import { Hero, AgencySeleciton } from "../sections";
 
 const heroProps = {
   image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
@@ -6,6 +7,7 @@ const heroProps = {
   description: "Start the process here",
   ctaText: "Start",
 };
+const agencySelectionProps = {};
 
 export default function Home() {
   return (
@@ -19,8 +21,10 @@ export default function Home() {
         />
       </head>
       <div>
+        {/** Hero Section*/}
         <Hero {...heroProps} />
-        {/** Other sections */}
+        {/** Agency Section*/}
+        <AgencySeleciton {...agencySelectionProps} />
       </div>
     </>
   );
